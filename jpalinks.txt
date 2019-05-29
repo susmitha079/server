@@ -1,0 +1,1 @@
+https://www.objectdb.com/java/jpa/query/criteria#JPA_Criteria_API_vs_JPQL_

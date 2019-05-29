@@ -1,0 +1,49 @@
+  <properties>
+    <java.version>1.8</java.version>
+  
+   <slf4j.version>1.7.5</slf4j.version>
+    <log4j.version>1.7.5</log4j.version>
+</properties>
+  
+  <dependencies>
+  
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${log4j.version}</version>
+    </dependency> 
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-entitymanager</artifactId>
+  <version>5.2.10.Final</version>
+  
+</dependency>
+  <!-- Database -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.6</version>
+    </dependency> 
+    
+  
+    </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+       	<target>${java.version}</target>
+        <source>${java.version}</source>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
